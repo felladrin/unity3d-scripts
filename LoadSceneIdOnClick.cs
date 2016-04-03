@@ -1,12 +1,12 @@
-﻿using UnityEngine;
-using System.Collections;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LoadSceneIdOnClick : MonoBehaviour
 {
-    public int SceneIdOnBuildSettings;
+	public int SceneIdOnBuildSettings;
 
-    void OnMouseUp()
-    {
-        Application.LoadLevel(SceneIdOnBuildSettings);
-    }
+	void OnMouseUp()
+	{
+		SceneManager.LoadScene(SceneIdOnBuildSettings);
+	}
 }
