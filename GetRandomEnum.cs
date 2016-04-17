@@ -1,6 +1,5 @@
-static T GetRandomEnum<T>()
+static T GetRandomEnum<T> ()
 {
-    System.Array arr = System.Enum.GetValues(typeof(T));
-    T randomEnum = (T)arr.GetValue(UnityEngine.Random.Range(0, arr.Length));
-    return randomEnum;
+	Array array = Enum.GetValues (typeof(T));
+	return (T)array.GetValue (new Random ().Next (0, array.Length));
 }
