@@ -1,13 +1,10 @@
 ﻿using UnityEngine;
 
-namespace HeadOfState
+public class CloseOnEscPressed : MonoBehaviour
 {
-	public class CloseOnEscPressed : MonoBehaviour
+	void Update ()
 	{
-		void Update ()
-		{
-			if (gameObject.activeInHierarchy && Input.GetKey (KeyCode.Escape))
-				gameObject.SetActive (false);
-		}
+		if (Input.GetKeyDown (KeyCode.Escape))
+			gameObject.SetActive (false);
 	}
 }
