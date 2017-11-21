@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class TeleportTargetOnCollition : MonoBehaviour {
+public class TeleportTargetOnTriggerEnter2D : MonoBehaviour {
 	public Vector2 PositionToTeleport;
 	public GameObject ObjectToWatchIfCollided;
 
