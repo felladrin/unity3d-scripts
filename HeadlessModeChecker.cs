@@ -1,6 +1,6 @@
 public static class HeadlessModeChecker
 {
-    public static bool IsInHeadlessMode()
+    public static bool Check()
     {
         var condition1 = System.Environment.CommandLine.Contains("-batchmode");
         var condition2 = System.Environment.CommandLine.Contains("-nographics");
